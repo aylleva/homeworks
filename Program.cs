@@ -1,17 +1,16 @@
-﻿//task1
-Console.WriteLine("2 mertebeli ededi daxil edin:");
-int num = Convert.ToInt32(Console.ReadLine());
-int a, b;
-
-a = num % 10;
-b = num / 10;
-if(a>b)
+﻿//task2
+Console.WriteLine("ededi daxil edin:");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n == 2)
 {
-    int max = a;
-    Console.WriteLine(max);
+    Console.WriteLine("bu eded sade ededdir");
 }
-if (b > a)
+  else  if (n % 3 == 0 || n % 2 == 0 || n % 5 == 0)
+    {
+        Console.WriteLine("bu eded murekkeb ededdir");
+    }
+  else
 {
-    int max = b;
-    Console.WriteLine(max);
+    Console.WriteLine("bu eded sade ededdir");
 }
+   
